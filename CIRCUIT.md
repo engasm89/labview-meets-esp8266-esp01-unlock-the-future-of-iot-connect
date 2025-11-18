@@ -1,20 +1,16 @@
-# ESP8266 + LabVIEW — Circuit Schematic
+# Labview Meets Esp8266 Esp01 Unlock The Future Of Iot Connect — Circuit Notes
 
-- Course: LabVIEW meets ESP8266 ESP01 Unlock the Future of IoT Connect
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/labview-tcp-ip-communication-with-esp8266-esp-01-tcp-ip/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Embedded Systems board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- ESP8266 powered at `3.3V`; GPIO to sensors; Wi-Fi TCP/IP to PC running LabVIEW.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- ESP8266 ---- Wi-Fi ---- PC (LabVIEW TCP server)
-```
-
-## Purchase With Discount
-
-Get a discounted price and build TCP/IP integrations — use the link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
